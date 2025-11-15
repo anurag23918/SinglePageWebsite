@@ -21,20 +21,107 @@
 	<link rel="stylesheet" href="assets/css/global.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
-	<style>
+	<!-- <style>
   
 
   /* ADD THIS NEW CODE: 
     This targets the blue overlay and removes it.
   */
-  .ori-video-play-7::before {
+ 
+</style> -->
+<!-- sponsor slider styles -->
+<style>
+	/* ---- Sponsor slider: keep logos inside the white card ---- */
+
+/* the white card that contains the logos */
+.ori-sponsor-content-7 {
+  position: relative;       /* ensure it's the clipping ancestor */
+  overflow: hidden;         /* clip anything that sticks out */
+  padding: 40px 30px;       /* keep some inner spacing from edges */
+  border-radius: 10px;
+  box-shadow: 0 18px 40px rgba(15, 30, 50, 0.06);
+  background: #fff;
+}
+
+/* keep the slider full-width inside the card */
+.ori-sponsor-slider-7 {
+  width: 100%;
+  margin: 18px auto 0;
+}
+
+/* ensure slick's visible area is clipped */
+.ori-sponsor-slider-7 .slick-list,
+.ori-sponsor-slider-7 .slick-track {
+  overflow: hidden !important;   /* important to override earlier rule */
+}
+
+/* align each slide nicely and center logos */
+.ori-sponsor-slider-7 .ori-sponsor-img {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+}
+
+/* logo sizing */
+.ori-sponsor-slider-7 .ori-sponsor-img img {
+  max-height: 60px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* mobile responsiveness */
+@media (max-width: 768px) {
+  .ori-sponsor-content-7 { padding: 20px 12px; }
+  .ori-sponsor-slider-7 .ori-sponsor-img img { max-height: 46px; }
+}
+
+
+	 .ori-video-play-7::before {
     background: none !important; 
   }
 
+  /* container item */
+  .ori-sponsor-slider-7 {
+    margin: 30px 0 10px;
+  }
+
+  .ori-sponsor-slider-7 .ori-sponsor-img {
+    padding: 10px 18px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+  }
+
+  .ori-sponsor-slider-7 .ori-sponsor-img .inner-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ori-sponsor-slider-7 .ori-sponsor-img img {
+    max-height: 60px;  /* tweak this height if needed */
+    width: auto;
+    display: block;
+    object-fit: contain;
+  }
+
+  /* make sure slick track isn't clipped */
+  .ori-sponsor-slider-7 .slick-track, .ori-sponsor-slider-7 .slick-list {
+    overflow: visible;
+  }
+
+  /* optional: add some spacing and center the heading */
+  #ori-sponsor-7 h3 { text-align: center; margin-bottom: 18px; font-weight: 600; }
 </style>
+
+
 </head>
 <body class="digital-agency-2">
-	<div id="preloader"></div>
+	<!-- <div id="preloader"></div> -->
 	<div class="up">
 		<a href="#" class="scrollup text-center"><i class="fas fa-chevron-up"></i></a>
 	</div>
@@ -46,7 +133,7 @@
 		<div class="ori-header-content-area">
 			<div class="ori-header-content d-flex align-items-center justify-content-between">
 				<div class="brand-logo">
-					<a href="#"><img src="assets/img/logo/logo55.png" alt=""></a>
+					<a href="#"><img src="assets/img/logo/logo (2).png" alt=""></a>
 				</div>
 				<div class="ori-main-navigation-cta-btn d-flex align-items-center">
 					<div class="ori-main-navigation-area">
@@ -529,6 +616,41 @@
 							<img src="assets/img/sponsor/bangur.png" alt="">
 						</div>
 					</div>
+					<div class="ori-sponsor-img">
+						<div class="inner-img">
+							<img src="assets/img/sponsor/hsbc.png" alt="">
+						</div>
+					</div>
+					<div class="ori-sponsor-img">
+						<div class="inner-img">
+							<img src="assets/img/sponsor/tiscon.png" alt="">
+						</div>
+					</div>
+					<div class="ori-sponsor-img">
+						<div class="inner-img">
+							<img src="assets/img/sponsor/itc.png" alt="">
+						</div>
+					</div>
+					<div class="ori-sponsor-img">
+						<div class="inner-img">
+							<img src="assets/img/sponsor/tatasteel.png" alt="">
+						</div>
+					</div>
+					<div class="ori-sponsor-img">
+						<div class="inner-img">
+							<img src="assets/img/sponsor/harman.png" alt="">
+						</div>
+					</div>
+					<div class="ori-sponsor-img">
+						<div class="inner-img">
+							<img src="assets/img/sponsor/adani.png" alt="">
+						</div>
+					</div>
+					<div class="ori-sponsor-img">
+						<div class="inner-img">
+							<img src="assets/img/sponsor/bangur.png" alt="">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -813,7 +935,7 @@
 								</div>
 							</div>
 							<div class="ori-counter-cta-btn">
-								<span>Want to Contact with us?</span> <a href="mailto:amitkedia15@gmail.com" class="ori-btn-7">Send us Mail</a>
+								<span>Want to Contact with us?</span> <a href="mailto:support@envisionservices.in" class="ori-btn-7">Send us Mail</a>
 							</div>
 						</div>
 					</div>
@@ -826,8 +948,8 @@
 											<img src="assets/img/project/pro1.png" alt="">
 										</div>
 										<div class="ori-project-text">
-											<h3><a href="#">Digital Previews Of Homes</a></h3>
-											<span><a href="#">by Colour Vision</a></span>
+											<h3><a href="#">Digital Previews</a></h3>
+											<!-- <span><a href="#">by Colour Vision</a></span> -->
 											<div class="ori-project-btn d-flex align-items-center justify-content-center position-absolute">
 												<a href="#"><i class="far fa-plus"></i></a>
 											</div>
@@ -837,7 +959,7 @@
 								<div class="ori-project-slider-item-7">
 									<div class="ori-project-slider-item-area position-relative">
 										<div class="ori-project-img">
-											<img src="assets/img/project/pro2.jpg" alt="">
+											<img src="assets/img/project/pro2.png" alt="">
 										</div>
 										<div class="ori-project-text">
 											<h3><a href="#">Corporate Events</a></h3>
@@ -851,11 +973,11 @@
 								<div class="ori-project-slider-item-7">
 									<div class="ori-project-slider-item-area position-relative">
 										<div class="ori-project-img">
-											<img src="assets/img/project/pro1.jpg" alt="">
+											<img src="assets/img/project/pro3 (2).png" alt="">
 										</div>
 										<div class="ori-project-text">
-											<h3><a href="#">Digital Consulting</a></h3>
-											<span><a href="#">GMG Group LTD</a></span>
+											<h3><a href="#">Giftings</a></h3>
+											<!-- <span><a href="#">GMG Group LTD</a></span> -->
 											<div class="ori-project-btn d-flex align-items-center justify-content-center position-absolute">
 												<a href="#"><i class="far fa-plus"></i></a>
 											</div>
@@ -864,7 +986,7 @@
 								</div>
 								<div class="ori-project-slider-item-7">
 									<div class="ori-project-slider-item-area position-relative">
-										<div class="ori-project-img">
+										<!-- <div class="ori-project-img">
 											<img src="assets/img/project/pro1.jpg" alt="">
 										</div>
 										<div class="ori-project-text">
@@ -872,7 +994,7 @@
 											<span><a href="#">GMG Group LTD</a></span>
 											<div class="ori-project-btn d-flex align-items-center justify-content-center position-absolute">
 												<a href="#"><i class="far fa-plus"></i></a>
-											</div>
+											</div> -->
 										</div>
 									</div>
 								</div>
@@ -1159,13 +1281,13 @@
 			<div class="ori-seven-contact-content d-flex">
 				<div class="ori-seven-contact-map-info">
 					<div id="ori-seven-map">
-						<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6209.242755903148!2d-77.04363602434464!3d38.90977276948481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1394992895496"  height="365"></iframe>
+						<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d875.6648748399067!2d88.37316994801068!3d22.542057845825212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027787cc681fc3%3A0xd5f43899aca2cddd!2sShivam%20sadan!5e1!3m2!1sen!2sin!4v1763115138488!5m2!1sen!2sin"  height="365" ></iframe>
+						<!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6209.242755903148!2d-77.04363602434464!3d38.90977276948481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1394992895496"  height="365"></iframe> -->
 					</div> 
 					<div class="ori-seven-contact-info d-flex">
 						<div class="ori-seven-contact-info-item headline pera-content">
 							<h3>Office Address:</h3>
-							<p> 380 St Kilda Road, Melbourne
-							VIC 3004, Australia</p>
+							<p> 1st Floor , Shivam Sadan , 6A Tiljala Road , Kolkata-700046</p>
 						</div>
 						<div class="ori-seven-contact-info-item headline pera-content">
 							<h3>Phone Number:</h3>
@@ -1174,7 +1296,7 @@
 						</div>
 						<div class="ori-seven-contact-info-item headline pera-content">
 							<h3>Mail Address</h3>
-							<p> amitkedia15@gmail.com</p>
+							<p>support@envisionservices.in</p>
 							<!-- <p>help@support.com</p> -->
 						</div>
 					</div>
@@ -1370,7 +1492,7 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="ori-footer-text">
-								This is where aspiration meets innovation, candor fuels collaboration and impossible surrenders to teamwork.
+								We transform ideas into powerful experiences.Turning vision into impact, every single time.
 							</div>
 						</div>
 						<!-- <div class="col-md-6">
@@ -1390,7 +1512,7 @@
 				<div class="ori-footer-logo-social d-flex justify-content-between align-items-center">
 					<div class="ori-footer-logo">
 						<div class="brand-logo">
-							<a href="#"><img src="assets\img\logo\lastlogo.png" ></a>
+							<a href="#"><img src="assets\img\logo\logo (3).png" ></a>
 						</div>
 					</div>
 					<div class="ori-footer-social">
@@ -1431,6 +1553,35 @@
 	<script src="assets/js/jquery.magnific-popup.min.js"></script>
 	<script src="assets/js/jquery.marquee.min.js"></script>
 	<script src="assets/js/script.js"></script>
+	<script>
+  $(document).ready(function(){
+    // only init if slick is available
+    if ($.fn.slick) {
+      $('.ori-sponsor-slider-7').slick({
+        slidesToShow: 5,        // visible logos on desktop (change as needed)
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,       // required for continuous linear scroll
+        speed: 4000,            // higher = slower scroll (ms to move full width)
+        cssEase: 'linear',
+        infinite: true,
+        arrows: false,
+        dots: false,
+        pauseOnHover: true,     // pause when user hovers
+        centerMode: false,
+        swipeToSlide: true,
+        responsive: [
+          { breakpoint: 1200, settings: { slidesToShow: 4 } },
+          { breakpoint: 992,  settings: { slidesToShow: 3 } },
+          { breakpoint: 576,  settings: { slidesToShow: 2 } }
+        ]
+      });
+    } else {
+      console.warn('Slick slider not found. Make sure slick.js is loaded.');
+    }
+  });
+</script>
+
 
 </body>
 </html>		
